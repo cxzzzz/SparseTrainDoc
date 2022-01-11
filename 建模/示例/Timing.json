@@ -1,0 +1,21 @@
+{
+  signal:[
+    { name:"clk",            wave:"p............."  },
+    { name:"rst",            wave:"1..0.........."  },
+    { name:"ch0_idx_value",  wave:"..2..2..2..2.." , data:["0","1","2","3"] },
+    { name:"ch0_idx_valid",  wave:"x.0..1..1..1.." },
+    { name:"ch0_idx_ready",  wave:"x.0....10.10.1" },
+    { name:"ch1_mask_value", wave:"x.2..........." , data:["b00000111",] },
+    { name:"ch1_mask_valid", wave:"x.1..........." },
+    { name:"ch1_mask_ready", wave:"x.0..........." },
+    { name:"ch2_mask_value", wave:"x.2...........", data:["b11111111",] },
+    { name:"ch2_mask_valid", wave:"x.1..........." },
+    { name:"ch2_mask_ready", wave:"x.0..........." },
+    { name:"mul_ch0_idx" ,   wave:"x....222222222" ,data:["0","0","0","1","1","1","2","2","2"]},
+    { name:"mul_ch1_idx" ,   wave:"x....222222222" ,data:["0","1","2","0","1","2","0","1","2"]},
+    { name:"mul_ch2_idx" ,   wave:"x....222222222" ,data:["0","-1","-2","1","0","-1","2","1","0"]},
+    { name:"mul_valid"  ,    wave:"x.0..1........"},
+    { name:"mul_ready"  ,    wave:"x.1..........."}
+  ]
+
+}
