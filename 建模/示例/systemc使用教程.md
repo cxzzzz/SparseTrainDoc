@@ -72,7 +72,7 @@ SC_MODULE( counter ){
 
 int sc_main(int argc, char** argv){
 
-	sc_clock clk{ "clk" , 10 , SC_NS , 0.5 , 3 , SC_NS, true };
+	sc_clock clk( "clk" , 10 , SC_NS , 0.5 , 3 , SC_NS, true );
 	sc_signal<bool> reset;
 	sc_signal<unsigned int> counter_out;
 
